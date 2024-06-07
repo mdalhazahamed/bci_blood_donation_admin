@@ -1,4 +1,4 @@
-import 'package:bci_donation_admin/features/athentications/login_page.dart';
+import 'package:bci_donation_admin/features/athentications/pages/login_page.dart';
 import 'package:bci_donation_admin/features/home/home_page.dart';
 import 'package:flutter/material.dart';
 

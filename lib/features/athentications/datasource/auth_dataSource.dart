@@ -1,5 +1,5 @@
-import 'package:bci_donation_admin/features/athentications/datasource/login_api.dart';
-import 'package:bci_donation_admin/features/athentications/datasource/register_api.dart';
+import 'package:bci_donation_admin/features/athentications/datasource/api/login_api.dart';
+import 'package:bci_donation_admin/features/athentications/datasource/api/register_api.dart';
 import 'package:bci_donation_admin/features/athentications/model/login_response_model.dart';
 import 'package:bci_donation_admin/features/athentications/model/reg_req_model.dart';
 import 'package:bci_donation_admin/features/athentications/model/reg_res_model.dart';

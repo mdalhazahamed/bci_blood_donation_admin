@@ -1,8 +1,6 @@
 import 'package:bci_donation_admin/constants/app_constant.dart';
 import 'package:bci_donation_admin/route/routing_variables.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class BloodDonorPage extends StatelessWidget {
   const BloodDonorPage({super.key});
@@ -15,11 +13,7 @@ class BloodDonorPage extends StatelessWidget {
         centerTitle: true,
         title: Text(
           "BLOOD DONOR",
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w300,
-              color: Colors.white,
-              decorationThickness: 1),
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w300, color: Colors.white, decorationThickness: 1),
         ),
         leading: IconButton(
             onPressed: () {
@@ -41,8 +35,7 @@ class BloodDonorPage extends StatelessWidget {
                 itemCount: 10,
                 itemBuilder: (ctx, index) {
                   return Padding(
-                    padding:
-                        const EdgeInsets.only(top: 10, right: 16, left: 16),
+                    padding: const EdgeInsets.only(top: 10, right: 16, left: 16),
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -75,18 +68,12 @@ class BloodDonorPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Mohammad Alhaz Ahammed",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w500),
+                                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                                     ),
                                     Text(
                                       "AB+",
-                                      style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          color: AppConstant.primaryColor),
+                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: AppConstant.primaryColor),
                                     ),
-                                    
                                   ],
                                 ),
                               ],
@@ -96,16 +83,12 @@ class BloodDonorPage extends StatelessWidget {
                               children: [
                                 Text(
                                   "Address:",
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
+                                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(width: 5),
                                 Text(
                                   "Mohammadpur, Dhaka -1207",
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w300),
+                                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
@@ -114,18 +97,13 @@ class BloodDonorPage extends StatelessWidget {
                               children: [
                                 Text(
                                   "Contact No.",
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
+                                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(width: 5),
                                 SelectableText(
                                   "+8801601265012",
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
+                                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
                                 ),
-                              
                               ],
                             ),
                           ],

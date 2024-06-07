@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import '../features/athentications/model/login_response_model.dart';
 import 'app_config.dart';
@@ -83,7 +81,7 @@ class UserInfo {
     userInfo.mail = _response.userInfo!.email ?? "";
     // userInfo.username = _response.loginUser!.username;
     userInfo.id = _response.userInfo!.id.toString();
-    userInfo.name = _response.userInfo!.firstName.toString() + " " + _response.userInfo!.lastName.toString();
+    userInfo.name = "${_response.userInfo!.firstName} ${_response.userInfo!.lastName}";
     userInfo.refreshToken = refreshToken;
     await dataManager.saveToken(userInfo.authToken);
     await dataManager.saveID(userInfo.id);
@@ -114,16 +112,11 @@ class UserInfo {
   }
 
   Map<String, String> getAuthData() {
-    String username = 'ck_79734479cee1e56cc520d873991ddab19e30c423';
-    String password = 'cs_12a981d8632a54323336f4acf5ed6616d33bd556';
-    String basicAuth = 'Basic ' + base64.encode(utf8.encode('$username:$password'));
-    print(basicAuth);
     return {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      // if (userInfo.authToken.isNotEmpty) "AuthenticationToken": userInfo.authToken,
-      // if (userInfo.authToken.isNotEmpty) "Authorization": "Bearer ${userInfo.authToken}",
-      "Authorization": basicAuth,
+      if (userInfo.authToken.isNotEmpty) "AuthenticationToken": userInfo.authToken,
+      if (userInfo.authToken.isNotEmpty) "Authorization": "Bearer ${userInfo.authToken}",
       "timeDifference": "${appConfig.timeZoneOffset}",
       "x-api-version": "1.1"
     };

@@ -5,8 +5,8 @@ import 'package:bci_donation_admin/features/athentications/datasource/auth_dataS
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../model/login_req_model.dart';
-import '../../../model/login_response_model.dart';
+import '../../model/login_req_model.dart';
+import '../../model/login_response_model.dart';
 
 part 'login_event.dart';
 

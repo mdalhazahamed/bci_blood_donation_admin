@@ -1,12 +1,12 @@
-import 'package:bci_donation_admin/features/athentications/login_page.dart';
+import 'package:bci_donation_admin/features/athentications/pages/login_page.dart';
+import 'package:bci_donation_admin/features/blood_bank/pages/added_blood_bank.dart';
 import 'package:bci_donation_admin/features/home/home_page.dart';
-import 'package:bci_donation_admin/features/home/pages/added_page/added_blood_bank.dart';
-import 'package:bci_donation_admin/features/home/pages/blood_bank_page.dart';
 import 'package:bci_donation_admin/features/home/pages/blood_donor_page.dart';
 import 'package:bci_donation_admin/features/home/pages/blood_group_page.dart';
 import 'package:bci_donation_admin/route/routing_variables.dart';
 import 'package:flutter/material.dart';
 
+import '../features/blood_bank/pages/blood_bank_page.dart';
 import '../features/startup/startup_page.dart';
 
 class RouteGenerator {
@@ -21,7 +21,7 @@ class RouteGenerator {
       case Navigation.homePage:
         return MaterialPageRoute(builder: (_) => HomePage());
       case Navigation.addedBloodBank:
-        return MaterialPageRoute(builder: (_) => AddedBloodBank());
+        return MaterialPageRoute(builder: (_) => AddedBloodBankPage());
       // case Navigation.signUp:
       //   return MaterialPageRoute(builder: (_) => SignUpPage());
 

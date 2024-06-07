@@ -1,13 +1,13 @@
 import 'package:bci_donation_admin/constants/app_constant.dart';
 import 'package:bci_donation_admin/features/athentications/model/login_req_model.dart';
-import 'package:bci_donation_admin/features/athentications/presentation/bloc/loginBloc/login_bloc.dart';
+import 'package:bci_donation_admin/features/athentications/bloc/loginBloc/login_bloc.dart';
 import 'package:bci_donation_admin/route/routing_variables.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter/material.dart';
 
-import '../../core/utils/toast.dart';
-import '../home/pages/added_page/added_blood_bank.dart';
+import '../../../core/utils/toast.dart';
+import '../../blood_bank/pages/added_blood_bank.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
