@@ -1,7 +1,8 @@
-
 import 'package:bci_donation_admin/route/route_generator.dart';
 import 'package:bci_donation_admin/route/routing_variables.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+
 // import 'package:flutter_easyloading/flutter_easyloading.dart';
 // import 'router/route_generator.dart';
 // import 'router/routing_variables.dart';
@@ -40,9 +41,9 @@ class _MyAppState extends State<MyApp> {
               // fontFamily: 'PlusJakarta',
             ),
       ),
-      initialRoute: Navigation.homePage,
+      initialRoute: Navigation.startup,
       onGenerateRoute: RouteGenerator.generateRoute,
-     // builder: EasyLoading.init(),
+      builder: EasyLoading.init(),
     );
   }
 }
