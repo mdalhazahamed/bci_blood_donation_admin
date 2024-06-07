@@ -24,7 +24,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     final AuthDataSource dataSource = AuthDataSourceImpl();
     final LoginResponseModel? entity = await dataSource.login(event.loginReqModel);
     if (entity != null) {
-      userInfo.setUserData(entity!);
+      userInfo.setUserData(entity);
       emit(LoginSuccessState(entity));
     } else {
       emit(LoginErrorState("Unable to login"));

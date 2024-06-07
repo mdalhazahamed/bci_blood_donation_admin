@@ -74,14 +74,14 @@ class UserInfo {
   //   }
   // }
 
-  Future<void> setUserData(final LoginResponseModel _response) async {
-    userInfo.authToken = _response.tokenInfo!.token ?? "";
+  Future<void> setUserData(final LoginResponseModel response) async {
+    userInfo.authToken = response.tokenInfo!.token ?? "";
     // final String refreshToken = _response.refreshToken ?? "";
     userInfo.refreshToken = refreshToken;
-    userInfo.mail = _response.userInfo!.email ?? "";
+    userInfo.mail = response.userInfo!.email ?? "";
     // userInfo.username = _response.loginUser!.username;
-    userInfo.id = _response.userInfo!.id.toString();
-    userInfo.name = "${_response.userInfo!.firstName} ${_response.userInfo!.lastName}";
+    userInfo.id = response.userInfo!.id.toString();
+    userInfo.name = "${response.userInfo!.firstName} ${response.userInfo!.lastName}";
     userInfo.refreshToken = refreshToken;
     await dataManager.saveToken(userInfo.authToken);
     await dataManager.saveID(userInfo.id);
