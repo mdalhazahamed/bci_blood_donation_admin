@@ -1,7 +1,7 @@
 import 'package:bci_donation_admin/features/athentications/pages/login_page.dart';
 import 'package:bci_donation_admin/features/blood_bank/pages/added_blood_bank.dart';
 import 'package:bci_donation_admin/features/home/home_page.dart';
-import 'package:bci_donation_admin/features/home/pages/blood_donor_page.dart';
+import 'package:bci_donation_admin/features/blood_donor/pages/blood_donor_page.dart';
 import 'package:bci_donation_admin/features/home/pages/blood_group_page.dart';
 import 'package:bci_donation_admin/route/routing_variables.dart';
 import 'package:flutter/material.dart';
