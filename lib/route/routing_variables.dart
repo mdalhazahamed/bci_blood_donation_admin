@@ -1,6 +1,6 @@
 class Navigation {
   static const String homePage = '/';
-
+  static const String startup = 'startup';
   static const String register = 'register';
   static const String addedBloodBank = 'addedBloodBank';
   static const String login = 'login';

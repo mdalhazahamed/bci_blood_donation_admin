@@ -17,10 +17,8 @@ List<HomeEntity> homeEntity = [
     name: "Blood Donor",
     image: "assets/images/blood_donor.png",
   ),
-  HomeEntity(
-    name: "Blood groups",
-    image:"assets/images/রক্তদাতা.png",
-  ),
-
- 
+  // HomeEntity(
+  //   name: "Blood groups",
+  //   image:"assets/images/রক্তদাতা.png",
+  // ),
 ];
