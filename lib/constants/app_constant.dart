@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppConstant {
-  static const String devUrl = "http://192.168.0.104:8051/bloodbank-backend/api/v1/public/";
-  static const String medialUrl = "http://192.168.0.104:8051/bloodbank-backend/api/v1/public/media/";
+  static const String devUrl = "http://192.168.0.106:8051/bloodbank-backend/api/v1/public/";
+  static const String medialUrl = "http://192.168.0.106:8051/bloodbank-backend/api/v1/public/media/";
 
   static const double paddingSmall = 8.00;
   static const double paddingNormal = 16.00;

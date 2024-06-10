@@ -81,7 +81,7 @@ class _AddedBloodBankPageState extends State<AddedBloodBankPage> {
                 keyboardType: TextInputType.number,
                 text: "Map link",
                 icon: Icon(
-                  Icons.phone,
+                  Icons.map,
                   color: Colors.black,
                   size: 22,
                 ),

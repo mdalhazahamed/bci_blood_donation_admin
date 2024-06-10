@@ -20,7 +20,7 @@ class AppConfig {
 
   // static const String _prodUrl = "https://url";
   // final String _baseUrl = "http://172.16.201.166:8051/bloodbank-backend/";
-  final String _baseUrl = "http://192.168.0.104:8051/bloodbank-backend/";
+  final String _baseUrl = "http://192.168.0.106:8051/bloodbank-backend/";
   int _updateStatus = 0;
   int get updateStatus => _updateStatus;
   String get basePath => _baseUrl;
