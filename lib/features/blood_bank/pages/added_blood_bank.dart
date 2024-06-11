@@ -75,17 +75,17 @@ class _AddedBloodBankPageState extends State<AddedBloodBankPage> {
                   size: 22,
                 ),
               ),
-              SizedBox(height: 16),
-              CustomTextFieldWidget(
-                textEditingController: regMapEditor,
-                keyboardType: TextInputType.number,
-                text: "Map link",
-                icon: Icon(
-                  Icons.map,
-                  color: Colors.black,
-                  size: 22,
-                ),
-              ),
+              // SizedBox(height: 16),
+              // CustomTextFieldWidget(
+              //   textEditingController: regMapEditor,
+              //   keyboardType: TextInputType.number,
+              //   text: "Map link",
+              //   icon: Icon(
+              //     Icons.map,
+              //     color: Colors.black,
+              //     size: 22,
+              //   ),
+              // ),
               SizedBox(height: 22),
               BlocListener(
                 bloc: addBloodBankBloc,
@@ -165,6 +165,7 @@ class CustomTextFieldWidget extends StatelessWidget {
         controller: textEditingController,
         keyboardType: keyboardType,
         decoration: InputDecoration(
+        
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(
@@ -178,6 +179,7 @@ class CustomTextFieldWidget extends StatelessWidget {
                 width: 0.5,
                 color: AppConstant.primaryColor,
               )),
+              
           labelText: text,
           labelStyle: TextStyle(
             fontSize: 10,
