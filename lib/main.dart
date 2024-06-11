@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
               // fontFamily: 'PlusJakarta',
             ),
       ),
-      initialRoute: Navigation.startup,
+      initialRoute: Navigation.homePage,
       onGenerateRoute: RouteGenerator.generateRoute,
       builder: EasyLoading.init(),
     );
